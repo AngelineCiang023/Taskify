@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { z } from "zod";
 
-// Schema validasi input
 const taskSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
@@ -24,7 +23,6 @@ export async function GET(req: NextRequest) {
     where.priority = priority;
   }
 
-  // ⬇️ FILTER BERDASARKAN TANGGAL
   if (selectedDate) {
     where.dueDate = {
       gte: new Date(selectedDate + "T00:00:00"),

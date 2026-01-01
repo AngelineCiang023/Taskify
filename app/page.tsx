@@ -40,8 +40,6 @@ export default function Home() {
               <TaskList selectedDate={selectedDate} />
             </div>
           )}
-
-          {/* Bisa ditambahin kondisi untuk Projects / Reports */}
         </div>
       </section>
     </main>

@@ -6,7 +6,6 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white/80 backdrop-blur border-b border-gray-200">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* LOGO */}
         <div className="flex items-center gap-3">
           <img
             src="/img/logo.png"
@@ -19,7 +18,6 @@ export default function Navbar() {
           </h1>
         </div>
 
-        {/* NAV LINKS */}
         <div className="flex items-center gap-6 text-sm font-medium">
           <Link
             href="/"
